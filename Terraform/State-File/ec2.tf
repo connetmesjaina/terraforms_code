@@ -11,7 +11,7 @@ provider "aws" {
 }
 terraform {
  backend "s3" {
-   bucket = "sjaina-terraform"
+   bucket = "sandeep-jaina"
    key = "sample/terraform.tfstate"
    region = "us-east-1"
    dynamodb_table = "terraform_state"
