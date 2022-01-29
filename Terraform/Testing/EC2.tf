@@ -7,7 +7,7 @@ resource "aws_spot_instance_request" "cheap_worker" {
   wait_for_fulfillment      = true
   //spot_type                 = "persistent"
   tags                      = {
-    Name                    = "element(var.COMPONENTS, count.index)" - ${var.ENV}
+    Name                    = "element(var.COMPONENTS, count.index)" - "${var.ENV}"
   }
 }
 
