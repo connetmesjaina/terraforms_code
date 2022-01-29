@@ -1,2 +1,2 @@
-variable "DB_COMPONENTS" {}
+variable "COMPONENTS" {}
 variable "ENV" {}
