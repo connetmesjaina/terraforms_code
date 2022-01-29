@@ -1,4 +1,4 @@
-bucket             = "terraform-sjaina"
+bucket             = "sandeep-jaina"
 key                = "Dev/terraform.tfstate"
 region             = "us-east-1"
 dynamodb_table     = "terraform"
