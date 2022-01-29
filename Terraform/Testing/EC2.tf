@@ -7,7 +7,7 @@ resource "aws_spot_instance_request" "cheap_worker" {
   wait_for_fulfillment      = true
   //spot_type                 = "persistent"
   tags                      = {
-    Name                    = "${element(var.COMPONENTS, count.index)}-${var.ENV}"
+    Name                    = element(var.COMPONENTS, count.index) - var.ENV
   }
 }
 
@@ -15,7 +15,7 @@ resource "aws_ec2_tag" "name-tag" {
   count                     = local.LENGTH
   resource_id               = element(aws_spot_instance_request.cheap_worker.*.spot_instance_id, count.index)
   key                       = "Name"
-  value                     = "${element(var.COMPONENTS, count.index)}-${var.ENV}"
+  value                     = element(var.COMPONENTS, count.index) - var.ENV
 }
 
 
