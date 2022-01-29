@@ -1,1 +1,1 @@
-COMPONENTS = ["webserver","DBServer"]
+COMPONENTS = ["webserver", "DBServer"]
