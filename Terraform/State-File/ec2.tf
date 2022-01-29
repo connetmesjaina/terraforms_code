@@ -1,5 +1,5 @@
 resource "aws_instance" "sample" {
-  ami           = "ami-0e4e4b2f188e91845"
+  ami           = "ami-0fc800a3140d9997d"
   instance_type = "t2.micro"
   tags = {
     Name = "statefile"
